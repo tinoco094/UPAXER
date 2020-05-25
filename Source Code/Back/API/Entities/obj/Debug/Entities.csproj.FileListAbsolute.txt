@@ -1,0 +1,5 @@
+C:\Users\tinoc\Desktop\Examen\Back\API\Entities\bin\Debug\Entities.dll
+C:\Users\tinoc\Desktop\Examen\Back\API\Entities\bin\Debug\Entities.pdb
+C:\Users\tinoc\Desktop\Examen\Back\API\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\tinoc\Desktop\Examen\Back\API\Entities\obj\Debug\Entities.dll
+C:\Users\tinoc\Desktop\Examen\Back\API\Entities\obj\Debug\Entities.pdb
