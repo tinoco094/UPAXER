@@ -1,0 +1,83 @@
+[
+  {
+    "id": 0,
+    "data": "Sign In"
+  },
+  {
+    "id": 1,
+    "data": "Username"
+  },
+  {
+    "id": 2,
+    "data": "password"
+  },
+  {
+    "id": 3,
+    "data": "Don't have an account?"
+  },
+  {
+    "id": 4,
+    "data": "Sign Up"
+  },
+  {
+    "id": 5,
+    "data": "Forgot your password?"
+  },
+  {
+    "id": 6,
+    "data": "Login"
+  },
+  {
+    "id": 7,
+    "data": "Already have an account?"
+  },
+  {
+    "id": 8,
+    "data": "Recover"
+  },
+  {
+    "id": 9,
+    "data": "An email with your new password has already been sent"
+  },
+  {
+    "id": 10,
+    "data": "Unrecognized user"
+  },
+  {
+    "id": 11,
+    "data": "Name"
+  },
+  {
+    "id": 12,
+    "data": "Last name"
+  },
+  {
+    "id": 13,
+    "data": ""
+  },
+  {
+    "id": 14,
+    "data": "Email"
+  },
+  {
+    "id": 15,
+    "data": "Confirm Password"
+  },
+  {
+    "id": 16,
+    "data": "User not found or email not registered consult the administrator"
+  },
+  {
+    "id": 17,
+    "data": "Registered user"
+  },
+  {
+    "id": 18,
+    "data": "Incorrect username or password"
+  },
+  {
+    "id": 19,
+    "data": "the password is not same"
+  }
+
+]

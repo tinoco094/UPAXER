@@ -1,0 +1,106 @@
+<div class="col-md-12">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col">
+      <mat-form-field class="">
+        <mat-select placeholder="Idioma" [(ngModel)]="opcion" (ngModelChange)="changeLanguage($event)">
+          <mat-option [value]="1">
+            Español
+          </mat-option>
+          <mat-option [value]="2">
+            English
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+        <h3>{{Actual[0].data}}</h3>
+        <div class="d-flex justify-content-end social_icon">
+          <img src="https://elasticbeanstalk-us-east-1-460503004594.s3.amazonaws.com/upaxer/administrator/resources/logoUpaxer.png"
+               class="logo" />
+        </div>
+      </div>
+      <div class="card-body">
+        <form *ngIf="Actividad == 1">
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" [(ngModel)]="_signIn.Username" [ngModelOptions]="{standalone: true}" maxlength="10" class="form-control" placeholder="{{Actual[1].data}}" required>
+          </div>
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-key"></i></span>
+            </div>
+            <input type="password" [(ngModel)]="_signIn.Password" [ngModelOptions]="{standalone: true}" maxlength="10" class="form-control" placeholder="{{Actual[2].data}}" required>
+          </div>
+          <div *ngIf="errorSignIn == true" class="input-group form-group">
+            <span class="links-no-link">{{errorSignInText}}</span>
+          </div>
+          <div class="form-group">
+            <input type="submit" (click)="SignInSend()" value="{{Actual[6].data}}" class="btn float-right login_btn">
+          </div>
+        </form>
+        <form *ngIf="Actividad == 2">
+          <div class="input-group form-group">
+            <input type="text" [(ngModel)]="_signUp.Name" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="{{Actual[11].data}}">
+          </div>
+          <div class="input-group form-group">
+            <input type="text" [(ngModel)]="_signUp.LastName" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="{{Actual[12].data}}">
+          </div>
+          <div *ngIf="opcion != 2" class="input-group form-group">
+            <input type="text" [(ngModel)]="_signUp.MotherLastName" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="{{Actual[13].data}}">
+          </div>
+          <div class="input-group form-group">
+            <input type="text" [(ngModel)]="_signUp.Username" [ngModelOptions]="{standalone: true}" maxlength="10" class="form-control" placeholder="{{Actual[1].data}}">
+          </div>
+          <div class="input-group form-group">
+            <input type="email" [(ngModel)]="_signUp.Email" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="{{Actual[14].data}}">
+          </div>
+          <div class="input-group form-group">
+            <input type="password" [(ngModel)]="_signUp.Password" [ngModelOptions]="{standalone: true}" maxlength="10" class="form-control" placeholder="{{Actual[2].data}}">
+          </div>
+          <div class="input-group form-group">
+            <input type="password" [(ngModel)]="_passwordRepeat" [ngModelOptions]="{standalone: true}" maxlength="10" class="form-control" placeholder="{{Actual[15].data}}">
+          </div>
+          <div *ngIf="errorSignUp == true" class="input-group form-group">
+            <span class="links-no-link">{{errorSignUpText}}</span>
+          </div>
+          <div class="form-group">
+            <input type="submit" (click)=" SignUpSend()" value="{{Actual[4].data}}" class="btn float-right login_btn">
+          </div>
+        </form>
+        <form *ngIf="Actividad == 3">
+          <div class="input-group form-group">
+            <input type="text" [(ngModel)]="_Recover.Username" [ngModelOptions]="{standalone: true}" maxlength="10" class="form-control" placeholder="{{Actual[1].data}}">
+          </div>
+          <div *ngIf="errorRecover == true" class="input-group form-group">
+            <span class="links-no-link">{{errorRecoverText}}</span>
+          </div>
+          <div class="col-md-12" style="height:40px"></div>
+          <div class="form-group">
+            <input type="submit" (click)="ForgotSend()" value="{{Actual[8].data}}" class="btn float-right login_btn">
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <div *ngIf="Actividad != 1" class="d-flex justify-content-center links">
+          {{Actual[7].data}}<span (click)="SignIn()" class="links-no-link">{{Actual[6].data}}</span>
+        </div>
+        <div *ngIf="Actividad != 2" class="d-flex justify-content-center links">
+          {{Actual[3].data}}<span (click)="SignUp()" class="links-no-link">{{Actual[4].data}}</span>
+        </div>
+        <div *ngIf="Actividad != 3" class="d-flex justify-content-center">
+          <span (click)="Forgot()" class="links-no-link">{{Actual[5].data}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "data": "Datos del Usuario"
+  },
+  {
+    "id": 1,
+    "data": "Nombre de Usuario"
+  },
+  {
+    "id": 2,
+    "data": "Nombre"
+  },
+  {
+    "id": 3,
+    "data": "Apellido Paterno"
+  },
+  {
+    "id": 4,
+    "data": "Apellido Materno"
+  },
+  {
+    "id": 5,
+    "data": "Correo Electronico"
+  },
+  {
+    "id": 6,
+    "data": "Borrar"
+  },
+  {
+    "id": 7,
+    "data": "Modificar"
+  },
+  {
+    "id": 8,
+    "data": "Cerrar sesión"
+  }
+]

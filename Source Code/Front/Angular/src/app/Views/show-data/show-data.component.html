@@ -1,0 +1,70 @@
+<div class="col-md-12">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col">
+      <mat-form-field class="">
+        <mat-select placeholder="Idioma" [(ngModel)]="opcion" (ngModelChange)="changeLanguage($event)">
+          <mat-option [value]="1">
+            Español
+          </mat-option>
+          <mat-option [value]="2">
+            English
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+        <h3>{{Actual[0].data}}</h3>
+        <div class="d-flex justify-content-end social_icon">
+          <img src="https://elasticbeanstalk-us-east-1-460503004594.s3.amazonaws.com/upaxer/administrator/resources/logoUpaxer.png"
+               class="logo" />
+        </div>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="col-md-12">
+            <div class="row">
+              <span class=" links">{{Actual[1].data}}</span>
+              <input type="text" [(ngModel)]="_Recover.Username" [ngModelOptions]="{standalone: true}" class="form-control" maxlength="10" placeholder="{{Actual[1].data}}">
+            </div>
+            <div class="row">
+              <span class=" links">{{Actual[2].data}}</span>
+              <input type="text" [(ngModel)]="_Recover.Name" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="{{Actual[2].data}}">
+            </div>
+            <div class="row">
+              <span class=" links">{{Actual[3].data}}</span>
+              <input type="text" [(ngModel)]="_Recover.LastName" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="{{Actual[3].data}}">
+            </div>
+            <div *ngIf="opcion == 1" class="row">
+              <span class=" links">{{Actual[4].data}}</span>
+              <input type="text" [(ngModel)]="_Recover.MotherLastName" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="{{Actual[4].data}}">
+            </div>
+            <div class="row">
+              <span class=" links">{{Actual[5].data}}</span>
+              <input type="text" [(ngModel)]="_Recover.Email" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="{{Actual[5].data}}">
+            </div>
+          </div>
+          <div *ngIf="error == true" class="input-group form-group">
+            <span class="links-no-link">{{errorText}}</span>
+          </div>
+          <div class="row" style="height:20px">
+          </div>
+          <div class="row">
+            <div class="col col"><input type="submit" (click)="Update()" value="{{Actual[7].data}}" class="btn float-right login_btn"></div>
+            <div class="col"></div>
+            <div class="col col"><input type="submit" (click)="Delete()" value="{{Actual[6].data}}" class="btn float-right login_btn"></div>
+            <div class="col-md-12" style="height:20px"></div>
+            <div class="col"><input type="submit" (click)="Exit()" value="{{Actual[8].data}}" class="btn btn-block float-right login_btn"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

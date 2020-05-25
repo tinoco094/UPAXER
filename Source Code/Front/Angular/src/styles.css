@@ -1,0 +1,11 @@
+
+/*html, body {
+  background-image: url('https://upaxer.com/wp-content/uploads/2019/10/slider-upaxer-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: 'Numans', sans-serif;
+}*/
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

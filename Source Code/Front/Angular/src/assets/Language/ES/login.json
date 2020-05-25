@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "data": "Ingresar"
+  },
+  {
+    "id": 1,
+    "data": "Nombre de Usuario"
+  },
+  {
+    "id": 2,
+    "data": "Contraseña"
+  },
+  {
+    "id": 3,
+    "data": "¿Aún no tienes cuenta?"
+  },
+  {
+    "id": 4,
+    "data": "Registrate"
+  },
+  {
+    "id": 5,
+    "data": "¿Olvidaste tu contraseña?"
+  },
+  {
+    "id": 6,
+    "data": "Ingresar"
+  },
+  {
+    "id": 7,
+    "data": "Ya ¿Tienes Cuenta?"
+  },
+  {
+    "id": 8,
+    "data": "Recuperar"
+  },
+  {
+    "id": 9,
+    "data": "Ya fue enviado un correo con su nueva contraseña"
+  },
+  {
+    "id": 10,
+    "data": "Usuario no reconocido"
+  },
+  {
+    "id": 11,
+    "data": "Nombre"
+  },
+  {
+    "id": 12,
+    "data": "Apellido Paterno"
+  },
+  {
+    "id": 13,
+    "data": "Apellido Materno"
+  },
+  {
+    "id": 14,
+    "data": "Correo Electrónico"
+  },
+  {
+    "id": 15,
+    "data": "Confirmar Contraseña"
+  },
+  {
+    "id": 16,
+    "data": "Usuario no encontrado o correo no registrado consulte a el administrador"
+  },
+  {
+    "id": 17,
+    "data": "Usuario ya registrado"
+  },
+  {
+    "id": 18,
+    "data": "Usuario o contraseña incorrecto"
+  },
+  {
+    "id": 19,
+    "data": "La contraseña no es la misma"
+  }
+]
